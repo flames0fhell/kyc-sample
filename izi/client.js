@@ -24,7 +24,6 @@ class Client{
                 "Authorization": `${authPrefix}//${signature}`,
             }
         }
-        // console.log(JSON.stringify(headers))
         const response = await axios(axiosReq)
 
         return response
