@@ -1,6 +1,5 @@
 
 const {genAuthPrefix, genSignKey, genSignature, genBody, genHeaders, genMsg} = require("./utils")
-const querystring = require('querystring');
 const axios = require("axios")
 class Client{
     constructor(ak, sk){

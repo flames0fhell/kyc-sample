@@ -21,6 +21,7 @@ const main = async () => {
 		name: "HITORI ACHMAD"
     }
     const data = await client.Request(url, body)
+    console.log(data.data)
 }
 
 main();
