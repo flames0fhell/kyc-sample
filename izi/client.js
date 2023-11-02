@@ -1,6 +1,5 @@
 
 const {genAuthPrefix, genSignKey, genSignature, genBody, genHeaders, genMsg} = require("./utils")
-const querystring = require('querystring');
 const axios = require("axios")
 class Client{
     constructor(ak, sk){
@@ -24,7 +23,6 @@ class Client{
                 "Authorization": `${authPrefix}//${signature}`,
             }
         }
-        // console.log(JSON.stringify(headers))
         const response = await axios(axiosReq)
 
         return response
