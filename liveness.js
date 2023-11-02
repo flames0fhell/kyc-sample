@@ -3,9 +3,8 @@ const fs = require('fs');
 require('dotenv').config();
 
 function convertToBase64(filename) {
-    const data = fs.readFileSync(filename, "base64");
     // const base64Data = data.toString('base64');
-    return data;
+    return fs.readFileSync(filename, "base64");
     
 }
 
