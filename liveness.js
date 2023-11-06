@@ -12,9 +12,9 @@ function convertToBase64(filename) {
 const main = async () => {
 
     const client = new izi(process.env.API_KEY, process.env.SECRET_KEY)
-    const url = "https://api.sandbox.izidata.co.id/";
+    const url = "https://api.sandbox.izidata.co.id/v1/picturelive";
     const body = {
-        img:  convertToBase64("tes.jpeg"),
+        img:  convertToBase64("tes3.jpeg"),
 		
     }
     const data = await client.Request(url, body)
